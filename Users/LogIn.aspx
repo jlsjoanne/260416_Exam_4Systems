@@ -11,11 +11,15 @@
             <br />
             <br />
             <b>密碼:</b> &emsp;
-            <asp:TextBox ID="Password" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
         </div>
         <br />
         <div>
-            <asp:Button ID="Submit" runat="server" Text="送出" />
+            <asp:Button ID="Submit" runat="server" Text="送出" OnClick="Submit_Click" />
+        </div>
+        <br />
+        <div>
+            <asp:LinkButton ID="ToSignUp" runat="server" OnClick="ToSignUp_Click">尚未註冊? 前往註冊</asp:LinkButton>
         </div>
     </main>
 </asp:Content>

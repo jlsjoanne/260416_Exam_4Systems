@@ -199,6 +199,7 @@
     <Content Include="Site.Master" />
     <Content Include="Users\LogIn.aspx" />
     <Content Include="Users\Mgmt.aspx" />
+    <Content Include="Users\ResetPwd.aspx" />
     <Content Include="Users\SignUp.aspx" />
     <Content Include="Users\UserInfo.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -261,6 +262,13 @@
     </Compile>
     <Compile Include="Users\Mgmt.aspx.designer.cs">
       <DependentUpon>Mgmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users\ResetPwd.aspx.cs">
+      <DependentUpon>ResetPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users\ResetPwd.aspx.designer.cs">
+      <DependentUpon>ResetPwd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Users\SecurityHelper.cs" />
     <Compile Include="Users\SignUp.aspx.cs">

@@ -5,15 +5,15 @@
     <main>
         <h2>四大系統考試</h2>
         <p>Welcome 
-            <asp:Label ID="Username" runat="server" Visible="False"></asp:Label>!
+            <asp:Label ID="Username" runat="server"></asp:Label>!
         </p>
         <div>
-            <asp:LinkButton ID="LogIn" runat="server">登入</asp:LinkButton>
+            <asp:LinkButton ID="LogIn" runat="server" OnClick="LogIn_Click">登入</asp:LinkButton>
             <br />
-            <asp:LinkButton ID="SignUp" runat="server">註冊</asp:LinkButton>
+            <asp:LinkButton ID="SignUp" runat="server" OnClick="SignUp_Click">註冊</asp:LinkButton>
         </div>
         <div>
-            <asp:LinkButton ID="LogOut" runat="server" Visible="False">登出</asp:LinkButton>
+            <asp:LinkButton ID="LogOut" runat="server" Visible="False" OnClick="LogOut_Click">登出</asp:LinkButton>
         </div>
     </main>
 

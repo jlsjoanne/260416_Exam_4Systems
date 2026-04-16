@@ -9,12 +9,11 @@
             <asp:TextBox ID="Username" runat="server"></asp:TextBox>
             <br /> <br />
             <b>密碼:</b> &emsp; &emsp;
-            <asp:TextBox ID="Password" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
             <br /> <br />
             <b>確認密碼:</b> &nbsp;
-            <asp:TextBox ID="PwdConfirm" runat="server" AutoPostBack="True"></asp:TextBox>
-            &emsp;
-            <asp:Label ID="CheckPwd" runat="server"></asp:Label>
+            <asp:TextBox ID="PwdConfirm" runat="server" TextMode="Password"></asp:TextBox>
+            
         </div>
         <br />
         <div>

@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main>
-        
+        <h3>帳號管理</h3>
+        <asp:GridView ID="UserGrid" runat="server" AutoGenerateColumns="False"></asp:GridView>
     </main>
 </asp:Content>

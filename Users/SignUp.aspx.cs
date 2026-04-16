@@ -14,54 +14,76 @@ namespace _260416_Exam_4Systems.Users
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack)
-            {
-                if(Password.Text == PwdConfirm.Text)
-                {
-                    CheckPwd.ForeColor = System.Drawing.Color.Green;
-                    CheckPwd.Text = "密碼輸入一致";
-                }
-                else
-                {
-                    CheckPwd.ForeColor = System.Drawing.Color.Red;
-                    CheckPwd.Text = "密碼輸入不一致";
-                }
-            }
+            
         }
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-            // check if password and confirm password are the same
-            if(CheckPwd.Text == "密碼輸入一致")
+            if(string.IsNullOrEmpty(Username.Text) || string.IsNullOrEmpty(Password.Text))
             {
-                // check if DB already have this username
-                if (!CheckRepeatUsername())
-                {
-                    // insert user info (username, password) into DB
-                    if (RegisterUser())
-                    {
-                        Response.Write("<script>alert('註冊成功')</script>");
-                        Response.Redirect("LogIn.aspx");
-                    }
-                }
+                Response.Write("<script>alert('帳號或密碼不得為空');</script>");
+                return;
+            }
+            if(Password.Text != PwdConfirm.Text)
+            {
+                Response.Write("<script>alert('密碼輸入不一致');</script>");
+                return;
+            }
+
+            if (checkDuplicate())
+            {
+                Response.Write("<script>alert('帳號已存在');</script>");
+                return;
             }
             else
             {
-                Response.Write("<script>alert('密碼輸入不一致')</script>");
+                string connectionString = WebConfigurationManager.ConnectionStrings["UsersDB"].ConnectionString;
+                string registerQuery = "INSERT INTO [UsersData] (UserName, PasswordHash) " +
+                "VALUES (@UserName, @PasswordHash)";
+
+                string hashPwd = SecurityHelper.HashPassword(Password.Text);
+
+                SqlConnection conn = new SqlConnection(connectionString);
+                SqlCommand command = new SqlCommand(registerQuery, conn);
+
+                command.Parameters.AddWithValue("@UserName", Username.Text);
+                command.Parameters.AddWithValue("@PasswordHash", hashPwd);
+
+                try
+                {
+                    conn.Open();
+                    int result = command.ExecuteNonQuery();
+
+                    command.Cancel();
+                    conn.Close();
+
+                    if(result < 0)
+                    {
+                        Response.Write("<script>alert('註冊失敗');</script>");
+                    }
+                    else
+                    {
+                        Response.Write("<script>alert('註冊成功')</scrpipt>");
+                        Response.Redirect("LogIn.aspx");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Response.Write($"<script>alert('{ex.Message}')</script>");
+                }
             }
         }
 
-        private bool CheckRepeatUsername()
+        private bool checkDuplicate()
         {
-            string username = Username.Text.Trim();
             string connectionString = WebConfigurationManager.ConnectionStrings["UsersDB"].ConnectionString;
-            string checkUNameQuery = "SELECT * FROM [UsersData] WHERE UserName = @UserName";
+            string checkQuery = "SELECT * FROM [UsersData] WHERE UserName = @UserName";
 
             using(SqlConnection conn = new SqlConnection(connectionString))
             {
-                using(SqlCommand command = new SqlCommand(checkUNameQuery, conn))
+                using(SqlCommand command = new SqlCommand(checkQuery, conn))
                 {
-                    command.Parameters.AddWithValue("@UserName", username);
+                    command.Parameters.AddWithValue("@UserName", Username.Text);
                     SqlDataReader dr = null;
 
                     try
@@ -71,36 +93,34 @@ namespace _260416_Exam_4Systems.Users
                         if (dr.HasRows)
                         {
                             dr.Close();
-                            Response.Write("<script>alert('帳號已存在')</script>");
+                            conn.Close();
                             return true;
                         }
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         Response.Write($"<script>alert('{ex.Message}')</script>");
+                        conn.Close();
                         return true;
                     }
                 }
-                return false;
             }
+            return false;
         }
 
-        private bool RegisterUser()
+        private void RegisterUser()
         {
-            string username = Username.Text.Trim();
-            string pwd = Password.Text.Trim();
-
-            string pwdHash = SecurityHelper.HashPassword(pwd);
-
             string connectionString = WebConfigurationManager.ConnectionStrings["UsersDB"].ConnectionString;
-            string insertUserQuery = "INSERT INTO [UsersData] (UserName, PasswordHash) " +
-                "VALUES(@UserName, @PasswordHash)";
+            string registerQuery = "INSERT INTO [UsersData] (UserName, PasswordHash) " +
+                "VALUES (@UserName, @PasswordHash)";
 
             using(SqlConnection conn = new SqlConnection(connectionString))
             {
-                using(SqlCommand command = new SqlCommand(insertUserQuery, conn))
+                using(SqlCommand command = new SqlCommand(registerQuery, conn))
                 {
-                    command.Parameters.AddWithValue("@UserName", username);
+                    string pwdHash = SecurityHelper.HashPassword(Password.Text);
+
+                    command.Parameters.AddWithValue("@UserName", Username.Text);
                     command.Parameters.AddWithValue("@PasswordHash", pwdHash);
 
                     try
@@ -110,17 +130,21 @@ namespace _260416_Exam_4Systems.Users
                         if(result < 0)
                         {
                             Response.Write("<script>alert('註冊失敗')</script>");
-                            return false;
+                        }
+                        else
+                        {
+                            Response.Write("<script>alert('註冊成功')</scrpipt>");
+                            command.Cancel();
+                            conn.Close();
+                            Response.Redirect("LogIn.aspx");
                         }
                     }
                     catch (Exception ex)
                     {
                         Response.Write($"<script>alert('{ex.Message}')</script>");
-                        return false;
                     }
                 }
             }
-            return true;
         }
     }
 }
