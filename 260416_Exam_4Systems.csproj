@@ -270,7 +270,7 @@
     <Compile Include="Users\ResetPwd.aspx.designer.cs">
       <DependentUpon>ResetPwd.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Users\SecurityHelper.cs" />
+    <Compile Include="Methods\SecurityHelper.cs" />
     <Compile Include="Users\SignUp.aspx.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -108,43 +108,43 @@ namespace _260416_Exam_4Systems.Users
             return false;
         }
 
-        private void RegisterUser()
-        {
-            string connectionString = WebConfigurationManager.ConnectionStrings["UsersDB"].ConnectionString;
-            string registerQuery = "INSERT INTO [UsersData] (UserName, PasswordHash) " +
-                "VALUES (@UserName, @PasswordHash)";
+        //private void RegisterUser()
+        //{
+        //    string connectionString = WebConfigurationManager.ConnectionStrings["UsersDB"].ConnectionString;
+        //    string registerQuery = "INSERT INTO [UsersData] (UserName, PasswordHash) " +
+        //        "VALUES (@UserName, @PasswordHash)";
 
-            using(SqlConnection conn = new SqlConnection(connectionString))
-            {
-                using(SqlCommand command = new SqlCommand(registerQuery, conn))
-                {
-                    string pwdHash = SecurityHelper.HashPassword(Password.Text);
+        //    using(SqlConnection conn = new SqlConnection(connectionString))
+        //    {
+        //        using(SqlCommand command = new SqlCommand(registerQuery, conn))
+        //        {
+        //            string pwdHash = SecurityHelper.HashPassword(Password.Text);
 
-                    command.Parameters.AddWithValue("@UserName", Username.Text);
-                    command.Parameters.AddWithValue("@PasswordHash", pwdHash);
+        //            command.Parameters.AddWithValue("@UserName", Username.Text);
+        //            command.Parameters.AddWithValue("@PasswordHash", pwdHash);
 
-                    try
-                    {
-                        conn.Open();
-                        int result = command.ExecuteNonQuery();
-                        if(result < 0)
-                        {
-                            Response.Write("<script>alert('註冊失敗')</script>");
-                        }
-                        else
-                        {
-                            Response.Write("<script>alert('註冊成功')</scrpipt>");
-                            command.Cancel();
-                            conn.Close();
-                            Response.Redirect("LogIn.aspx");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Response.Write($"<script>alert('{ex.Message}')</script>");
-                    }
-                }
-            }
-        }
+        //            try
+        //            {
+        //                conn.Open();
+        //                int result = command.ExecuteNonQuery();
+        //                if(result < 0)
+        //                {
+        //                    Response.Write("<script>alert('註冊失敗')</script>");
+        //                }
+        //                else
+        //                {
+        //                    Response.Write("<script>alert('註冊成功')</scrpipt>");
+        //                    command.Cancel();
+        //                    conn.Close();
+        //                    Response.Redirect("LogIn.aspx");
+        //                }
+        //            }
+        //            catch (Exception ex)
+        //            {
+        //                Response.Write($"<script>alert('{ex.Message}')</script>");
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
