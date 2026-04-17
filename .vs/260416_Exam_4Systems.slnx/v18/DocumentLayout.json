@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAC3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-04-17T03:55:45.104Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
