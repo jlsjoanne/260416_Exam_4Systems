@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system01_links\\links_client.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system01_links\\links_client.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system01_links\\links_client.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system01_links\\links_client.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system01_links\\links_mgmt.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system01_links\\links_mgmt.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system01_links\\links_mgmt_category.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system01_links\\links_mgmt_category.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system01_links\\links_mgmt.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system01_links\\links_mgmt.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system01_links\\links_add.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system01_links\\links_add.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system01_links\\links_add.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system01_links\\links_add.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,66 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Links_Mgmt.aspx",
-              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Mgmt.aspx",
-              "RelativeDocumentMoniker": "System01_Links\\Links_Mgmt.aspx",
-              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Mgmt.aspx",
-              "RelativeToolTip": "System01_Links\\Links_Mgmt.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-17T09:05:04.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Links_Mgmt_Category.aspx",
-              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Mgmt_Category.aspx",
-              "RelativeDocumentMoniker": "System01_Links\\Links_Mgmt_Category.aspx",
-              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Mgmt_Category.aspx",
-              "RelativeToolTip": "System01_Links\\Links_Mgmt_Category.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-17T09:01:57.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Links_Mgmt.aspx.cs",
               "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Mgmt.aspx.cs",
               "RelativeDocumentMoniker": "System01_Links\\Links_Mgmt.aspx.cs",
               "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Mgmt.aspx.cs",
               "RelativeToolTip": "System01_Links\\Links_Mgmt.aspx.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAAwMsAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAcwKwAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T07:37:38.196Z",
+              "WhenOpened": "2026-04-19T11:20:30.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Links_Add.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Add.aspx.cs",
-              "RelativeDocumentMoniker": "System01_Links\\Links_Add.aspx.cs",
-              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Add.aspx.cs",
-              "RelativeToolTip": "System01_Links\\Links_Add.aspx.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Links_Client.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Client.aspx.cs",
+              "RelativeDocumentMoniker": "System01_Links\\Links_Client.aspx.cs",
+              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Client.aspx.cs",
+              "RelativeToolTip": "System01_Links\\Links_Client.aspx.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAwKQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T07:19:06.363Z",
+              "WhenOpened": "2026-04-19T11:19:34.104Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Links_Add.aspx",
-              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Add.aspx",
-              "RelativeDocumentMoniker": "System01_Links\\Links_Add.aspx",
-              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Add.aspx",
-              "RelativeToolTip": "System01_Links\\Links_Add.aspx",
+              "DocumentIndex": 0,
+              "Title": "Links_Client.aspx",
+              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Client.aspx",
+              "RelativeDocumentMoniker": "System01_Links\\Links_Client.aspx",
+              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System01_Links\\Links_Client.aspx",
+              "RelativeToolTip": "System01_Links\\Links_Client.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-04-17T07:09:26.741Z",
+              "WhenOpened": "2026-04-19T11:19:01.829Z",
               "EditorCaption": ""
             },
             {

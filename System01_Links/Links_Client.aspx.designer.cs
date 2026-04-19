@@ -24,13 +24,13 @@ namespace _260416_Exam_4Systems.System01_Links
         protected global::System.Web.UI.WebControls.LinkButton Mgmt;
 
         /// <summary>
-        /// CategortDrop control.
+        /// CategoryDrop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList CategortDrop;
+        protected global::System.Web.UI.WebControls.DropDownList CategoryDrop;
 
         /// <summary>
         /// RPLinks control.

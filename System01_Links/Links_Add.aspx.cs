@@ -43,7 +43,7 @@ namespace _260416_Exam_4Systems.System01_Links
             }
 
             AddLinks();
-            Response.Redirect("Link_Mgmt.aspx");
+            Response.Redirect("Links_Mgmt.aspx");
         }
 
         private void AddLinks()

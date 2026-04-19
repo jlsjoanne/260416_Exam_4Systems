@@ -116,7 +116,7 @@ namespace _260416_Exam_4Systems.System01_Links
         private void GetCategory()
         {
             string connectionString = WebConfigurationManager.ConnectionStrings["SystemsDB"].ConnectionString;
-            string getCategoryQuery = "SELECT * FROM [Link_Category] WHERE IsPublished = 1 ORDER BY [CategoryOrder] ASC";
+            string getCategoryQuery = "SELECT * FROM [Link_Category] ORDER BY [CategoryOrder] ASC";
 
             using(SqlConnection conn = new SqlConnection(connectionString))
             {
