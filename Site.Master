@@ -48,6 +48,7 @@
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Users/UserInfo">帳號資訊</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/System01_Links/Links_Client">相關連結</a></li>
                     </ul>
                 </div>
             </div>
