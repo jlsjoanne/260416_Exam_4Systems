@@ -177,5 +177,10 @@ namespace _260416_Exam_4Systems.System01_Links
                 }
             }
         }
+
+        protected void GoBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Links_Mgmt.aspx");
+        }
     }
 }

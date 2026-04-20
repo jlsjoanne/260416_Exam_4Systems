@@ -16,6 +16,8 @@
                             <asp:Label ID="LCategory" runat="server"
                                 Text='<%# Eval("CategoryName") %>' ></asp:Label>
                        </b>
+                        (<asp:Label ID="CategoryCnt" runat="server" 
+                            Text='<%# Eval("Cnt") %>' ></asp:Label>)
                     </p>
                     <asp:ListView ID="LVLinks" runat="server" OnItemCommand="LVLinks_ItemCommand">
                         <ItemTemplate>

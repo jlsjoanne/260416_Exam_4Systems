@@ -3,6 +3,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main>
         <div>
+            <asp:Button ID="GoBack" runat="server" Text="返回連結管理" OnClick="GoBack_Click" />
+            &emsp; &emsp;
             <asp:Button ID="AddNew" runat="server" Text="新增分類" OnClick="AddNew_Click" />
         </div>
         <br />

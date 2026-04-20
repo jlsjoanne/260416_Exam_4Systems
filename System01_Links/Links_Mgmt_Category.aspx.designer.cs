@@ -15,6 +15,15 @@ namespace _260416_Exam_4Systems.System01_Links
     {
 
         /// <summary>
+        /// GoBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button GoBack;
+
+        /// <summary>
         /// AddNew control.
         /// </summary>
         /// <remarks>
