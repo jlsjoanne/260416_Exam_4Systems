@@ -64,7 +64,12 @@ namespace _260416_Exam_4Systems.System01_Links
             string connectionString = WebConfigurationManager.ConnectionStrings["SystemsDB"].ConnectionString;
             if (string.IsNullOrEmpty(categoryId) || categoryId == "0")
             {
-                string getAllCategoryQuery = "SELECT * FROM [Link_Category] WHERE IsPublished = 1 ORDER BY CategoryOrder ASC";
+                string getAllCategoryQuery = "SELECT C.CategoryId, CategoryName, COUNT(LinkId) 'Cnt' "+
+                    "FROM [Link_Category] AS C " +
+                    "LEFT JOIN [Link_Content] AS L ON C.CategoryId = L.CategoryId " +
+                    "WHERE C.IsPublished = 1 " +
+                    "GROUP BY C.CategoryId, CategoryName, CategoryOrder " +
+                    "ORDER BY CategoryOrder ASC";
                 
                 using(SqlConnection conn = new SqlConnection(connectionString))
                 {
@@ -89,7 +94,11 @@ namespace _260416_Exam_4Systems.System01_Links
             }
             else
             {
-                string getCategoryQuery = "SELECT * FROM [Link_Category] WHERE CategoryId = @CategoryId";
+                string getCategoryQuery = "SELECT C.CategoryId, CategoryName, COUNT(LinkId) 'Cnt' " +
+                    "FROM [Link_Category] AS C " +
+                    "LEFT JOIN [Link_Content] AS L ON C.CategoryId = L.CategoryId " +
+                    "WHERE C.CategoryId = @CategoryId " +
+                    "GROUP BY C.CategoryId, CategoryName";
 
                 using(SqlConnection conn = new SqlConnection(connectionString))
                 {
