@@ -67,7 +67,7 @@ namespace _260416_Exam_4Systems.System01_Links
                 string getAllCategoryQuery = "SELECT C.CategoryId, CategoryName, COUNT(LinkId) 'Cnt' "+
                     "FROM [Link_Category] AS C " +
                     "LEFT JOIN [Link_Content] AS L ON C.CategoryId = L.CategoryId " +
-                    "WHERE C.IsPublished = 1 " +
+                    "WHERE C.IsPublished = 1 AND L.IsPublished = 1 " +
                     "GROUP BY C.CategoryId, CategoryName, CategoryOrder " +
                     "ORDER BY CategoryOrder ASC";
                 
@@ -97,7 +97,7 @@ namespace _260416_Exam_4Systems.System01_Links
                 string getCategoryQuery = "SELECT C.CategoryId, CategoryName, COUNT(LinkId) 'Cnt' " +
                     "FROM [Link_Category] AS C " +
                     "LEFT JOIN [Link_Content] AS L ON C.CategoryId = L.CategoryId " +
-                    "WHERE C.CategoryId = @CategoryId " +
+                    "WHERE C.CategoryId = @CategoryId AND L.IsPublished = 1 " +
                     "GROUP BY C.CategoryId, CategoryName";
 
                 using(SqlConnection conn = new SqlConnection(connectionString))
