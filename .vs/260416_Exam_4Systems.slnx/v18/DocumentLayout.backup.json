@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system02_faq\\client_content.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system02_faq\\client_content.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system02_faq\\client_content.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system02_faq\\client_content.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\system02_faq\\mgmt_content.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system02_faq\\mgmt_content.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|c:\\users\\jlsjo\\documents\\rocketcamp\\webform\\260416_exam_4systems\\system02_faq\\mgmt_content.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{ABEDB1FD-A84E-48AA-B14C-A7EB56EF5CDA}|260416_Exam_4Systems.csproj|solutionrelative:system02_faq\\mgmt_content.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,8 +26,34 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Client_Content.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Client_Content.aspx.cs",
+              "RelativeDocumentMoniker": "System02_FAQ\\Client_Content.aspx.cs",
+              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Client_Content.aspx.cs",
+              "RelativeToolTip": "System02_FAQ\\Client_Content.aspx.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAIwEsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T02:31:58.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client_Content.aspx",
+              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Client_Content.aspx",
+              "RelativeDocumentMoniker": "System02_FAQ\\Client_Content.aspx",
+              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Client_Content.aspx",
+              "RelativeToolTip": "System02_FAQ\\Client_Content.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-04-21T02:31:43.502Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -22,6 +65,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mgmt_Content.aspx",
+              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Mgmt_Content.aspx",
+              "RelativeDocumentMoniker": "System02_FAQ\\Mgmt_Content.aspx",
+              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Mgmt_Content.aspx",
+              "RelativeToolTip": "System02_FAQ\\Mgmt_Content.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-04-21T01:39:08.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mgmt_Content.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Mgmt_Content.aspx.cs",
+              "RelativeDocumentMoniker": "System02_FAQ\\Mgmt_Content.aspx.cs",
+              "ToolTip": "C:\\Users\\jlsjo\\Documents\\RocketCamp\\Webform\\260416_Exam_4Systems\\System02_FAQ\\Mgmt_Content.aspx.cs",
+              "RelativeToolTip": "System02_FAQ\\Mgmt_Content.aspx.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAADwv4AAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-21T01:34:09.679Z",
+              "EditorCaption": ""
             }
           ]
         },
