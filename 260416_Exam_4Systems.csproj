@@ -206,6 +206,12 @@
     <Content Include="System01_Links\Links_Client.aspx" />
     <Content Include="System01_Links\Links_Mgmt.aspx" />
     <Content Include="System01_Links\Links_Mgmt_Category.aspx" />
+    <Content Include="System02_FAQ\Add_Category.aspx" />
+    <Content Include="System02_FAQ\Add_Content.aspx" />
+    <Content Include="System02_FAQ\Client_Category.aspx" />
+    <Content Include="System02_FAQ\Client_Content.aspx" />
+    <Content Include="System02_FAQ\Mgmt_Category.aspx" />
+    <Content Include="System02_FAQ\Mgmt_Content.aspx" />
     <Content Include="Users\LogIn.aspx" />
     <Content Include="Users\Mgmt.aspx" />
     <Content Include="Users\ResetPwd.aspx" />
@@ -293,6 +299,48 @@
     </Compile>
     <Compile Include="System01_Links\Links_Mgmt_Category.aspx.designer.cs">
       <DependentUpon>Links_Mgmt_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System02_FAQ\Add_Category.aspx.cs">
+      <DependentUpon>Add_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System02_FAQ\Add_Category.aspx.designer.cs">
+      <DependentUpon>Add_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System02_FAQ\Add_Content.aspx.cs">
+      <DependentUpon>Add_Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System02_FAQ\Add_Content.aspx.designer.cs">
+      <DependentUpon>Add_Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System02_FAQ\Client_Category.aspx.cs">
+      <DependentUpon>Client_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System02_FAQ\Client_Category.aspx.designer.cs">
+      <DependentUpon>Client_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System02_FAQ\Client_Content.aspx.cs">
+      <DependentUpon>Client_Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System02_FAQ\Client_Content.aspx.designer.cs">
+      <DependentUpon>Client_Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System02_FAQ\Mgmt_Category.aspx.cs">
+      <DependentUpon>Mgmt_Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System02_FAQ\Mgmt_Category.aspx.designer.cs">
+      <DependentUpon>Mgmt_Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System02_FAQ\Mgmt_Content.aspx.cs">
+      <DependentUpon>Mgmt_Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System02_FAQ\Mgmt_Content.aspx.designer.cs">
+      <DependentUpon>Mgmt_Content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Users\LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
